@@ -1,0 +1,100 @@
+{
+  "site": {
+    "title": "Boda Virginia & Marcos",
+    "primaryColor": "#C66C67",
+    "accentColor": "#EFB9B3",
+    "neutralColor": "#ffffff",
+    "textColor": "#1f2937",
+    "fontHeading": "Playfair Display, serif",
+    "fontBody": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial",
+    "favicon": "assets/favicon.png",
+    "heroImage": "assets/portada.jpg",
+    "heroGif": "",
+    "music": "assets/perfect.mp3",
+    "backgroundPattern": ""
+  },
+  "couple": {
+    "names": "Virginia & Marcos",
+    "dateMain": "23/01/2026",
+    "locationCity": "Neuquén, Argentina",
+    "hashtagOrIg": "@bodamarcosyvir"
+  },
+  "sections": {
+    "intro": {
+      "title": "¡Nos casamos!",
+      "subtitle": "Acompañanos a celebrar este gran día."
+    },
+    "fechas": {
+      "title": "Día, lugar y hora",
+      "subtitle": "Está dividido en dos fechas: Civil · Iglesia y Fiesta",
+      "items": [
+        {
+          "type": "Civil",
+          "date": "16/01/2026",
+          "time": "12:00 hs",
+          "place": "Registro Civil Plottier",
+          "address": "Juan B. Justo 176 (esquina Manuel Estrada)",
+          "mapsLink": "https://www.google.com/maps/search/?api=1&query=Registro+Civil+Plottier,+Juan+B+Justo+176"
+        },
+        {
+          "type": "Iglesia",
+          "date": "23/01/2026",
+          "time": "19:00 hs",
+          "place": "Parroquia San Antonio de Padua",
+          "address": "Chos Malal 150, Plottier (frente a la plaza San Martín)",
+          "mapsLink": "https://www.google.com/maps/search/?api=1&query=Parroquia+San+Antonio+de+Padua,+Chos+Malal+150,+Plottier"
+        },
+        {
+          "type": "Fiesta",
+          "date": "23/01/2026",
+          "time": "20:30 hs",
+          "place": "Salón Camioneros (grande)",
+          "address": "Aguado 2385, Neuquén capital",
+          "mapsLink": "https://www.google.com/maps/search/?api=1&query=Aguado+2385,+Neuqu%C3%A9n"
+        }
+      ]
+    },
+    "dresscode": {
+      "title": "Código de vestimenta",
+      "text": "Elegante Sport. Paleta sugerida: blanco, verde eucalipto y coral."
+    },
+    "paleta": {
+      "title": "Colores de la boda",
+      "colors": [
+        "#ffffff",
+        "#C66C67",
+        "#EFB9B3"
+      ]
+    },
+    "regalos": {
+      "title": "Regalos",
+      "text": "Si querés hacernos un regalo, podés usar nuestros alias/CBU:",
+      "aliases": [
+        {
+          "label": "Alias Marcos",
+          "value": "marcos.988.acuda.mp"
+        },
+        {
+          "label": "Alias Virginia",
+          "value": "VirginiaSanchezT.NX"
+        }
+      ]
+    },
+    "fotos": {
+      "title": "Si hay foto, hay historia",
+      "text": "Compartí tus fotos etiquetando",
+      "handle": "@bodamarcosyvir"
+    },
+    "rsvp": {
+      "title": "Confirmación de asistencia (RSVP)",
+      "deadline": "Fecha límite para confirmar: 01/12/2025",
+      "whatsappLabel": "Confirmar por WhatsApp",
+      "whatsappNumber": "+5492990000000",
+      "whatsappMessage": "Hola! Confirmo asistencia a la boda de Virginia & Marcos."
+    }
+  },
+  "footer": {
+    "madeBy": "Hecho con ♥ por Ale",
+    "repo": "https://github.com/tu-usuario/tu-repo"
+  }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boda Virginia & Marcos</title>
+  <meta name="description" content="Invitación digital estilo Fixdate Flores, con portada, música y animaciones." />
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+
+  <style>
+    /* Ocultar contenido en desktop */
+    .only-desktop {
+      display: none;
+      text-align: center;
+      padding: 100px 20px;
+      font-family: 'Inter', sans-serif;
+      background: #FFEFFF;
+      color: #782A26;
+      min-height: 100vh;
+    }
+
+    /* Desktop (pantallas grandes) */
+    @media (min-width: 900px) {
+      .only-desktop { display: block; }
+      .only-mobile { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MENSAJE SOLO DESKTOP -->
+  <div class="only-desktop">
+    <h2>📱 Esta invitación está disponible solo en celulares</h2>
+    <p>Por favor, accede desde tu dispositivo móvil.</p>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL SOLO MOBILE -->
+  <div id="splash" class="splash only-mobile">
+    <div class="splash-info">
+      <img src="assets/portada1.svg" alt="Decoración superior" class="decor-top">
+      <h2 class="welcome">¡Nos casamos!</h2>
+      <h1 class="names">Virginia & Marcos</h1>
+      <img src="assets/portada3.svg" alt="Decoración central" class="decor-middle">
+      <p class="sub">La música de fondo es parte de la experiencia</p>
+      <div class="cta-buttons">
+        <button id="enterWithMusic" class="btn-cta">Ingresar con música</button>
+        <button id="enterWithoutMusic" class="btn-cta">Ingresar sin música</button>
+      </div>
+      <img src="assets/portada2.svg" alt="Decoración inferior" class="decor-bottom">
+    </div>
+  </div>
+
+  <div id="page" class="hidden only-mobile">
+
+    <!-- Decoración esquina -->
+    <img src="assets/Group 2795.svg" alt="Decoración esquina" class="corner-decor">
+
+    <!-- Botón e ícono de música -->
+    <button id="musicBtn" class="music-btn" aria-label="Reproducir o pausar música">🎵</button>
+    <audio id="bgMusic" loop>
+      <source src="assets/perfect.mp3" type="audio/mpeg" />
+      Tu navegador no soporta audio en HTML5.
+    </audio>
+
+    <!-- HERO -->
+    <header class="hero" style="background-image: url('assets/portada.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <div class="hero-date-line">
+          <img src="assets/Group.svg" alt="Decoración izquierda" class="hero-deco hero-deco-left">
+          <span id="mainDate" class="hero-date">23/01/2026</span>
+          <img src="assets/Group-1.svg" alt="Decoración derecha" class="hero-deco hero-deco-right">
+        </div>
+        <h1 id="coupleNames">Virginia & Marcos</h1>
+        <img src="assets/deco1.svg" alt="Decoración bajo nombres" class="hero-deco hero-deco-center">
+        <p class="love-quote">“Nuestro amor es el viaje más hermoso, un sendero compartido que se llena de risas, sueños y eternidad.”</p>
+      </div>
+    </header>
+
+    <!-- CONTADOR REGRESIVO -->
+    <section class="countdown">
+      <div class="countdown-wrapper">
+        <img src="assets/time.svg" alt="Decoración contador" class="countdown-decor">
+        <div class="countdown-circle">
+          <h2 class="countdown-title">Faltan</h2>
+          <div class="countdown-timer">
+            <div class="time-box">
+              <span id="days">0</span>
+              <small>días</small>
+            </div>
+            <div class="time-box">
+              <span id="hours">0</span>
+              <small>hs</small>
+            </div>
+            <div class="time-box">
+              <span id="minutes">0</span>
+              <small>min</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIONES -->
+    <main>
+      <!-- Civil -->
+      <section class="evento-section" data-animate>
+        <img src="assets/civil.svg" alt="Ceremonia Civil" class="evento-icon">
+        <img src="assets/deco-arriba.svg" alt="" class="evento-deco deco-top">
+        <h2 class="evento-title">Ceremonia Civil</h2>
+        <img src="assets/deco-abajo.svg" alt="" class="evento-deco deco-bottom">
+        <p class="evento-meta">16/01/2026 – 12:00 hs</p>
+        <p class="evento-place">Registro Civil Plottier<br>Juan B. Justo 176 (esquina Manuel Estrada)</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Registro+Civil+Plottier,+Juan+B+Justo+176" target="_blank" rel="noopener" class="evento-btn">Cómo llegar</a>
+      </section>
+
+      <!-- Iglesia -->
+      <section class="evento-section" data-animate>
+        <img src="assets/iglesia.svg" alt="Ceremonia Religiosa" class="evento-icon">
+        <img src="assets/deco-arriba.svg" alt="" class="evento-deco deco-top">
+        <h2 class="evento-title">Ceremonia Religiosa</h2>
+        <img src="assets/deco-abajo.svg" alt="" class="evento-deco deco-bottom">
+        <p class="evento-meta">23/01/2026 – 19:00 hs</p>
+        <p class="evento-place">Parroquia San Antonio de Padua<br>Chos Malal 150, Plottier</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Parroquia+San+Antonio+de+Padua,+Chos+Malal+150,+Plottier" target="_blank" rel="noopener" class="evento-btn">Cómo llegar</a>
+      </section>
+
+      <!-- Fiesta -->
+      <section class="evento-section" data-animate>
+        <img src="assets/fiesta.svg" alt="Fiesta" class="evento-icon">
+        <img src="assets/deco-arriba.svg" alt="" class="evento-deco deco-top">
+        <h2 class="evento-title">Fiesta</h2>
+        <img src="assets/deco-abajo.svg" alt="" class="evento-deco deco-bottom">
+        <p class="evento-meta">23/01/2026 – 20:30 hs</p>
+        <p class="evento-place">Salón Camioneros (grande)<br>Aguado 2385, Neuquén capital</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Aguado+2385,+Neuqu%C3%A9n" target="_blank" rel="noopener" class="evento-btn">Cómo llegar</a>
+        <br><br>
+        <a href="https://wa.me/5492996844733?text=%C2%A1Hola!%20Quiero%20confirmar%20mi%20asistencia%20a%20la%20boda%20de%20Virginia%20y%20Marcos%20%0AMi%20nombre%20es%3A%20%0AAsistir%C3%A9%20acompa%C3%B1ado%2Fa%20de%3A%20"
+           target="_blank" rel="noopener" class="evento-btn confirmar-btn">Confirmar asistencia</a>
+        <br><br>
+        <p class="evento-meta">Fecha límite para confirmar asistencia: 01/12/2025</p>
+      </section>
+
+      <!-- Galería -->
+      <section class="galeria" id="galeria" data-animate>
+        <div class="galeria-fondo"></div>
+        <h2 class="galeria-title">Retratos de nuestro amor</h2>
+        <img src="assets/fotos.svg" alt="Decoración de galería" class="galeria-deco">
+        <div class="galeria-slider">
+          <div class="galeria-track">
+            <!-- Fotos -->
+            <img src="assets/fotos/1.jpeg" alt="Foto 1">
+            <img src="assets/fotos/2.jpeg" alt="Foto 2">
+            <img src="assets/fotos/3.jpeg" alt="Foto 3">
+            <img src="assets/fotos/4.jpeg" alt="Foto 4">
+            <img src="assets/fotos/5.jpeg" alt="Foto 5">
+            <img src="assets/fotos/6.jpeg" alt="Foto 6">
+            <img src="assets/fotos/7.jpeg" alt="Foto 7">
+            <img src="assets/fotos/8.jpeg" alt="Foto 8">
+            <img src="assets/fotos/9.jpeg" alt="Foto 9">
+            <img src="assets/fotos/10.jpeg" alt="Foto 10">
+            <img src="assets/fotos/11.jpeg" alt="Foto 11">
+            <img src="assets/fotos/12.jpeg" alt="Foto 12">
+            <img src="assets/fotos/13.jpeg" alt="Foto 13">
+            <img src="assets/fotos/14.jpeg" alt="Foto 14">
+            <img src="assets/fotos/15.jpeg" alt="Foto 15">
+            <img src="assets/fotos/16.jpeg" alt="Foto 16">
+            <!-- ... hasta la 16 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal fotos -->
+      <div id="fotoModal" class="modal">
+        <button type="button" class="modal-close" aria-label="Cerrar">×</button>
+        <img class="modal-content" id="modalImg" alt="Foto ampliada">
+      </div>
+
+      <!-- Vestimenta -->
+      <section class="vestimenta-card" data-animate>
+        <img src="assets/vestimenta.svg" alt="Icono Vestimenta" class="vestimenta-icon">
+        <h2 class="vestimenta-title">Vestimenta</h2>
+        <p class="vestimenta-text">Elegante Sport</p>
+      </section>
+
+      <!-- Regalos -->
+      <section class="vestimenta-card" data-animate>
+        <img src="assets/regalo.svg" alt="Icono Regalo" class="regalo-icon">
+        <h2 class="vestimenta-title">Regalos</h2>
+        <p class="vestimenta-text">Si deseas regalarnos algo más que tu hermosa presencia</p>
+        <div class="cbu-list">
+          <div class="cbu-item">
+            <span class="cbu-value">marcos.988.acuda.mp</span>
+            <button class="copy-btn" data-copy="marcos.988.acuda.mp">Copiar</button>
+          </div>
+          <div class="cbu-item">
+            <span class="cbu-value">VirginiaSanchezT.NX</span>
+            <button class="copy-btn" data-copy="VirginiaSanchezT.NX">Copiar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<!-- SECCIÓN COMPARTIR -->
+<section class="compartir" data-animate>
+  <div class="compartir-fondo"></div>
+
+  <h2 class="compartir-frase"><em>Compartimos este día <br> junto a vos</em></h2>
+  <p class="compartir-sub">Compartí tus fotos y videos de este hermoso día desde este QR</p>
+
+  <!-- QR -->
+  <div class="compartir-qr">
+    <img src="assets/QR.jpeg" alt="QR para subir fotos">
+  </div>
+
+  <!-- CTA -->
+  <a href="https://drive.google.com/drive/u/0/mobile/folders/13rqZOk96fmZWAhrZGiAy9L5WwTq_5zIP" 
+     target="_blank" 
+     rel="noopener" 
+     class="evento-btn">
+    O por este link
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p id="footerMade">Te esperamos ♥ Virginia & Marcos</p>
+  </div>
+</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
