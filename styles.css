@@ -674,13 +674,14 @@ main .container {
   min-height: 100vh;
 }
 
-/* Desktop (pantallas grandes) */
-@media (min-width: 900px) {
-  .only-desktop { display: block; }
-  .only-mobile { display: none; }
+/* Para móviles (pantallas chicas) */
+@media (max-width: 900px) {
+  .only-desktop { display: none; }  /* oculta contenido especial de desktop */
+  .only-mobile { display: block; }  /* asegura que se vean */
 }
 
-@media (min-width: 900px) {
+/* Para desktop (pantallas grandes) */
+@media (min-width: 901px) {
   body {
     max-width: 420px;    /* ancho típico de móvil */
     margin: 0 auto;      /* centrado */
