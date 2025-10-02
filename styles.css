@@ -637,7 +637,7 @@ main .container {
 
   .hero{
     background-size:cover;
-    background-position:-380px top;
+    background-position:-350px top;
   }
   .hero h1{font-size:clamp(40px,10vw,80px);}
   .hero-deco-center{height:52px;}
